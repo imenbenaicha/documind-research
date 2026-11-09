@@ -1,0 +1,36 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local databases and application state
+*.db
+*.sqlite
+*.sqlite3
+
+# Uploaded PDFs, generated data and local outputs
+data/
+uploads/
+outputs/
+artifacts/
+*.pdf
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Agent/development reference bundles not required at runtime
+.agents/

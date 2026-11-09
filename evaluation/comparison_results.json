@@ -1,0 +1,230 @@
+{
+    "pdf": "/Users/new/documind-ai/documind_test_document.pdf",
+    "number_of_chunks": 3,
+    "test_cases": 4,
+    "configuration": {
+        "fixed_top_k": 3,
+        "adaptive_max_k": 5,
+        "adaptive_threshold": 0.35
+    },
+    "fixed_summary": {
+        "average_precision": 0.5555555555555555,
+        "average_recall": 1.0,
+        "answerability_accuracy": 1.0,
+        "answer_correctness": 1.0,
+        "average_retrieved_chunks": 3.0,
+        "average_faithfulness": 1.0
+    },
+    "adaptive_summary": {
+        "average_precision": 0.6666666666666666,
+        "average_recall": 1.0,
+        "answerability_accuracy": 1.0,
+        "answer_correctness": 1.0,
+        "average_retrieved_chunks": 2.0,
+        "average_faithfulness": 1.0
+    },
+    "fixed_results": [
+        {
+            "id": 1,
+            "question": "What was Q2 2026 revenue?",
+            "strategy": "fixed",
+            "retrieved_chunks": 3,
+            "retrieved_pages": [
+                2,
+                1,
+                2
+            ],
+            "similarity_scores": [
+                0.593,
+                0.444,
+                0.3
+            ],
+            "precision": 1.0,
+            "recall": 1.0,
+            "generated_answer": "$1,250,000",
+            "expected_answer": "$1,250,000",
+            "predicted_answerable": true,
+            "expected_answerable": true,
+            "answerability_correct": true,
+            "answer_correct": true,
+            "faithfulness_score": 1.0,
+            "faithfulness_explanation": "The answer states Q2 2026 revenue as $1,250,000, which is directly supported by the retrieved passages that list the same figure."
+        },
+        {
+            "id": 2,
+            "question": "What was the percentage increase in revenue from Q1 to Q2 2026?",
+            "strategy": "fixed",
+            "retrieved_chunks": 3,
+            "retrieved_pages": [
+                2,
+                1,
+                2
+            ],
+            "similarity_scores": [
+                0.587,
+                0.481,
+                0.349
+            ],
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "generated_answer": "Approximately 13.6%",
+            "expected_answer": "13.6%",
+            "predicted_answerable": true,
+            "expected_answerable": true,
+            "answerability_correct": true,
+            "answer_correct": true,
+            "faithfulness_score": 1.0,
+            "faithfulness_explanation": "The answer states a 13.6% increase, which is directly supported by the passage that says the company recorded a quarter-over-quarter revenue increase of approximately 13.6%."
+        },
+        {
+            "id": 3,
+            "question": "What percentage of customer requests were resolved within one business day?",
+            "strategy": "fixed",
+            "retrieved_chunks": 3,
+            "retrieved_pages": [
+                1,
+                2,
+                2
+            ],
+            "similarity_scores": [
+                0.366,
+                0.357,
+                0.293
+            ],
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "generated_answer": "90%",
+            "expected_answer": "90%",
+            "predicted_answerable": true,
+            "expected_answerable": true,
+            "answerability_correct": true,
+            "answer_correct": true,
+            "faithfulness_score": 1.0,
+            "faithfulness_explanation": "The answer states 90%, which is directly supported by the passage that reports a one-day resolution rate of 90%."
+        },
+        {
+            "id": 4,
+            "question": "What was the company's net profit in Q2 2026?",
+            "strategy": "fixed",
+            "retrieved_chunks": 3,
+            "retrieved_pages": [
+                2,
+                1,
+                2
+            ],
+            "similarity_scores": [
+                0.573,
+                0.489,
+                0.346
+            ],
+            "precision": 0.0,
+            "recall": null,
+            "generated_answer": "The document does not contain sufficient information to answer this question.",
+            "expected_answer": null,
+            "predicted_answerable": false,
+            "expected_answerable": false,
+            "answerability_correct": true,
+            "answer_correct": null,
+            "faithfulness_score": 1.0,
+            "faithfulness_explanation": "The answer correctly states that the document lacks information on net profit, which is supported by the passages that only provide revenue figures and no profit data."
+        }
+    ],
+    "adaptive_results": [
+        {
+            "id": 1,
+            "question": "What was Q2 2026 revenue?",
+            "strategy": "adaptive",
+            "retrieved_chunks": 2,
+            "retrieved_pages": [
+                2,
+                1
+            ],
+            "similarity_scores": [
+                0.593,
+                0.444
+            ],
+            "precision": 1.0,
+            "recall": 1.0,
+            "generated_answer": "$1,250,000",
+            "expected_answer": "$1,250,000",
+            "predicted_answerable": true,
+            "expected_answerable": true,
+            "answerability_correct": true,
+            "answer_correct": true,
+            "faithfulness_score": 1.0,
+            "faithfulness_explanation": "The answer states Q2 2026 revenue as $1,250,000, which is directly supported by the retrieved passages that list the same figure."
+        },
+        {
+            "id": 2,
+            "question": "What was the percentage increase in revenue from Q1 to Q2 2026?",
+            "strategy": "adaptive",
+            "retrieved_chunks": 2,
+            "retrieved_pages": [
+                2,
+                1
+            ],
+            "similarity_scores": [
+                0.587,
+                0.481
+            ],
+            "precision": 0.5,
+            "recall": 1.0,
+            "generated_answer": "13.6%",
+            "expected_answer": "13.6%",
+            "predicted_answerable": true,
+            "expected_answerable": true,
+            "answerability_correct": true,
+            "answer_correct": true,
+            "faithfulness_score": 1.0,
+            "faithfulness_explanation": "The answer states 13.6%, which is directly supported by the passage that says the revenue increase was approximately 13.6%."
+        },
+        {
+            "id": 3,
+            "question": "What percentage of customer requests were resolved within one business day?",
+            "strategy": "adaptive",
+            "retrieved_chunks": 2,
+            "retrieved_pages": [
+                1,
+                2
+            ],
+            "similarity_scores": [
+                0.366,
+                0.357
+            ],
+            "precision": 0.5,
+            "recall": 1.0,
+            "generated_answer": "90%",
+            "expected_answer": "90%",
+            "predicted_answerable": true,
+            "expected_answerable": true,
+            "answerability_correct": true,
+            "answer_correct": true,
+            "faithfulness_score": 1.0,
+            "faithfulness_explanation": "The answer states 90%, which is directly supported by the retrieved passage that reports a one-day resolution rate of 90%."
+        },
+        {
+            "id": 4,
+            "question": "What was the company's net profit in Q2 2026?",
+            "strategy": "adaptive",
+            "retrieved_chunks": 2,
+            "retrieved_pages": [
+                2,
+                1
+            ],
+            "similarity_scores": [
+                0.573,
+                0.489
+            ],
+            "precision": 0.0,
+            "recall": null,
+            "generated_answer": "The document does not contain sufficient information to answer this question.",
+            "expected_answer": null,
+            "predicted_answerable": false,
+            "expected_answerable": false,
+            "answerability_correct": true,
+            "answer_correct": null,
+            "faithfulness_score": 1.0,
+            "faithfulness_explanation": "The answer correctly states that the document lacks information on net profit, which is supported by the passages that only provide revenue figures and no profit data."
+        }
+    ]
+}

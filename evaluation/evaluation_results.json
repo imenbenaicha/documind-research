@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "question": "What was Q2 2026 revenue?",
+        "precision_at_k": 1.0,
+        "recall_at_k": 1.0,
+        "answer_correct": true,
+        "answerability_correct": true,
+        "generated_answer": "$1,250,000",
+        "predicted_answerable": true
+    },
+    {
+        "id": 2,
+        "question": "What was the percentage increase in revenue from Q1 to Q2 2026?",
+        "precision_at_k": 0.3333333333333333,
+        "recall_at_k": 1.0,
+        "answer_correct": true,
+        "answerability_correct": true,
+        "generated_answer": "13.6%",
+        "predicted_answerable": true
+    },
+    {
+        "id": 3,
+        "question": "What percentage of customer requests were resolved within one business day?",
+        "precision_at_k": 0.3333333333333333,
+        "recall_at_k": 1.0,
+        "answer_correct": true,
+        "answerability_correct": true,
+        "generated_answer": "90%",
+        "predicted_answerable": true
+    },
+    {
+        "id": 4,
+        "question": "What was the company's net profit in Q2 2026?",
+        "precision_at_k": 0.0,
+        "recall_at_k": null,
+        "answer_correct": null,
+        "answerability_correct": true,
+        "generated_answer": "The document does not contain sufficient information to answer this question.",
+        "predicted_answerable": false
+    }
+]
